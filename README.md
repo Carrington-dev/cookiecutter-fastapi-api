@@ -217,6 +217,29 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 
 ---
 
+## ✅ 5. (Optional) Condition in README.md
+
+In `README.md`:
+
+````markdown
+{% if cookiecutter.use_docker == "yes" %}
+## 🐳 Docker
+
+To run the app with Docker:
+
+```bash
+docker-compose up --build
+````
+
+{% endif %}
+
+```
+
+---
+
+```
+
+
 <!-- ---
 
 ## 🔄 Do You Want Any of These?
