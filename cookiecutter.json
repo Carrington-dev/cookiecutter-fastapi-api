@@ -6,5 +6,6 @@
   "author_name": "Carrington Muleya",
   "use_docker": ["yes", "no"],
   "use_github_actions": ["yes", "no"],
+  "use_redis": ["yes", "no"],
   "secret_key": "secret_key"
 }
