@@ -1,0 +1,8 @@
+{
+  "project_name": "FastAPI Async API",
+  "project_slug": "fastapi_async_api",
+  "description": "An async web API using FastAPI and Uvicorn",
+  "author_name": "Carrington Muleya",
+  "use_docker": ["yes", "no"],
+  "use_github_actions": ["yes", "no"]
+}
