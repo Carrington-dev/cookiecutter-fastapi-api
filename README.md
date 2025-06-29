@@ -232,12 +232,12 @@ docker-compose up --build
 
 ---
 
-```
 
 
-<!-- ---
 
-## 🔄 Do You Want Any of These?
+
+
+<!-- ## 🔄 Do You Want Any of These?
 
 * ✅ Optional Celery + Redis for background tasks?
 * ✅ Role-based access control?
@@ -251,5 +251,4 @@ Please confirm or specify preferences — I’ll then:
 * Push it to your GitHub
 * Send you the zip download link
 
-Let me know your final customization preferences, or just say “proceed with defaults.”
- -->
+Let me know your final customization preferences, or just say “proceed with defaults.” -->
