@@ -7,5 +7,6 @@
   "use_docker": ["yes", "no"],
   "use_github_actions": ["yes", "no"],
   "use_redis": ["yes", "no"],
+  "database": ["sqlite", "postgresql", "mysql"],
   "secret_key": "secret_key"
 }

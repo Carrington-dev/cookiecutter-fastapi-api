@@ -233,6 +233,21 @@ docker-compose up --build
 ---
 
 
+## 🗄️ Database
+
+This project is configured to use:
+
+{% if cookiecutter.database == "sqlite" %}
+- SQLite for local development with `aiosqlite`
+{% elif cookiecutter.database == "postgresql" %}
+- PostgreSQL via `asyncpg`
+{% elif cookiecutter.database == "mysql" %}
+- MySQL via `aiomysql`
+{% endif %}
+
+The connection string is defined in `.env` under `DATABASE_URL`.
+
+
 
 
 

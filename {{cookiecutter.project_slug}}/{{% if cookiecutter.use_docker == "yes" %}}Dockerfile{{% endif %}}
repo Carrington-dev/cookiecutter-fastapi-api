@@ -1,7 +1,7 @@
 services:
-  postgres:
+  postgres_vc:
     image: pgvector/pgvector:pg15
-    container_name: postgres
+    container_name: postgres_vc
     environment:
       POSTGRES_USER: {{ cookiecutter.project_slug }}
       POSTGRES_PASSWORD: {{ cookiecutter.project_db_password }} # Use a strong password
@@ -14,6 +14,29 @@ services:
       - "5432:5432"
     networks:
       - backend
+
+  {% if cookiecutter.database == "postgresql" %}
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+  {% elif cookiecutter.database == "mysql" %}
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: app
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysqldata:/var/lib/mysql
+  {% endif %}
 
   {% if cookiecutter.use_redis == "yes" %}
   redis:
@@ -52,6 +75,11 @@ services:
 
 volumes:
   postgres_data:
+  {% if cookiecutter.database == "postgresql" %}
+  pgdata:
+  {% elif cookiecutter.database == "mysql" %}
+  mysqldata:
+  {% endif %}
 
 
 

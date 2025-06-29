@@ -9,6 +9,14 @@ python = "^3.10"
 fastapi = "^0.110.0"
 uvicorn = {extras = ["standard"], version = "^0.29.0"}
 
+{% if cookiecutter.database == "sqlite" %}
+aiosqlite = "^0.20.0"
+{% elif cookiecutter.database == "postgresql" %}
+asyncpg = "^0.29.0"
+{% elif cookiecutter.database == "mysql" %}
+aiomysql = "^0.2.0"
+{% endif %}
+
 {% if cookiecutter.use_redis == "yes" %}
 redis = "^5.0.3"
 aioredis = "^2.0.1"
