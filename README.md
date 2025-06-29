@@ -1,8 +1,3 @@
-Here’s a complete and clean `README.md` for your **Cookiecutter FastAPI Async Web API with Users** project:
-
----
-
-```markdown
 # 🚀 {{ cookiecutter.project_name }}
 
 An **asynchronous FastAPI web API** project scaffold, built with modern best practices:
