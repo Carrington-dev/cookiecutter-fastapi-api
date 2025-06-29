@@ -17,7 +17,7 @@ An **asynchronous FastAPI web API** project scaffold, built with modern best pra
 
 ```bash
 
-{{ cookiecutter.project\_slug }}/
+{{ cookiecutter.project_slug }}/
 ├── app/
 │   ├── api/             # API routes (v1/users, auth)
 │   ├── core/            # Config, security
@@ -167,6 +167,57 @@ cookiecutter gh:CarringtonMuleya/cookiecutter-fastapi-api
 `cookiecutter-fastapi-api`
 
 ---
+## Generate Secret Key
+
+### 🔐 Option 1: Python One-liner (recommended)
+
+```bash
+python -c "import secrets; print(secrets.token_urlsafe(32))"
+```
+
+#### 🔢 Example Output:
+
+```
+sKk4GdLU1TtnlqdY9L43ZgoHoJ_pGl0V5IlMoyeqFZs
+```
+
+This generates a **256-bit URL-safe** random string.
+
+---
+
+### 🔐 Option 2: From Python REPL
+
+```python
+import secrets
+secrets.token_urlsafe(32)
+```
+
+---
+
+### 🔐 Option 3: Using OpenSSL (Linux/macOS)
+
+```bash
+openssl rand -base64 32
+```
+
+---
+
+### 📌 How to Use in `.env`
+
+```env
+SECRET_KEY=sKk4GdLU1TtnlqdY9L43ZgoHoJ_pGl0V5IlMoyeqFZs
+```
+
+Or in code:
+
+```python
+import os
+SECRET_KEY = os.getenv("SECRET_KEY")
+```
+
+---
+
+<!-- ---
 
 ## 🔄 Do You Want Any of These?
 
@@ -183,4 +234,4 @@ Please confirm or specify preferences — I’ll then:
 * Send you the zip download link
 
 Let me know your final customization preferences, or just say “proceed with defaults.”
-
+ -->

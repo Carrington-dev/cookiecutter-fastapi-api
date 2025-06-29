@@ -4,5 +4,6 @@
   "description": "An async web API using FastAPI and Uvicorn",
   "author_name": "Carrington Muleya",
   "use_docker": ["yes", "no"],
-  "use_github_actions": ["yes", "no"]
+  "use_github_actions": ["yes", "no"],
+  "secret_key": "sKk4GdLU1TtnlqdY9L43ZgoHoJ_pGl0V5IlMoyeqFZs"
 }
