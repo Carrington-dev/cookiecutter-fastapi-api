@@ -20,7 +20,7 @@ An **asynchronous FastAPI web API** project scaffold, built with modern best pra
 
 ## 📦 Project Structure
 
-```
+```bash
 
 {{ cookiecutter.project\_slug }}/
 ├── app/
@@ -138,9 +138,9 @@ Created with 💡 by \[{{ cookiecutter.author\_name }}].
 
 This project is licensed under the MIT License.
 
-```
+```bash
 Perfect! Here's what I’ll do for you:
-
+```
 ---
 
 ## ✅ Action Plan
@@ -160,7 +160,7 @@ I’ll prepare and deliver:
 2. **GitHub-ready structure** so you can use it with:
 
 ```bash
-cookiecutter gh:CarringtonMuleya/cookiecutter-fastapi-async-users
+cookiecutter gh:CarringtonMuleya/cookiecutter-fastapi-api
 ```
 
 3. A `.zip` version you can download and use offline.
@@ -169,7 +169,7 @@ cookiecutter gh:CarringtonMuleya/cookiecutter-fastapi-async-users
 
 ## 📦 Your Template Name (suggested)
 
-`cookiecutter-fastapi-async-users`
+`cookiecutter-fastapi-api`
 
 ---
 
