@@ -1,6 +1,7 @@
 {
   "project_name": "FastAPI Async API",
   "project_slug": "fastapi_async_api",
+  "license": "MIT",
   "project_db_password": "MyS3cr3tP@ssw0rd",
   "description": "An async web API using FastAPI and Uvicorn",
   "author_name": "Carrington Muleya",
